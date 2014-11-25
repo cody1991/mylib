@@ -1,0 +1,41 @@
+.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+}
+#content {
+    height: 340px;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    margin:0 auto;
+}
+#imgs {
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    width: 1510px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+    
+    transform: translate(0, 0);
+}
+#imgs img {
+    float:left;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+    height: 340px;
+    /*apply a transform to kick in the hardware acceleration.  Without this, the first
+            time we add the transform you get odd rendering of the divs (half missing) */
+    
+    transform: translate(0, 0);
+}

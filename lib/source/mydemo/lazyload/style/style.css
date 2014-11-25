@@ -1,0 +1,14 @@
+.container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+}
+.lazy {
+    margin-bottom: 10px
+}
+img {
+    width: 100%;
+}
