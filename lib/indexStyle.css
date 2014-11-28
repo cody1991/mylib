@@ -8,3 +8,11 @@
     position: relative;
     margin: 0 auto;
 }
+.container p {
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container ul li {
+    margin-bottom: 15px;
+}

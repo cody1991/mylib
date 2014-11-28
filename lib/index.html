@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" type="text/css" href="indexStyle.css">
+    <title>说明文档</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>动态引入css和js文件，首页的js代码里面可以修改baseUrl，即前面的基本域名地址，主要来改变自己的github库的引入地址和公司的库的引入地址。下面是css和js文件的列表。这个库里面还有source文件夹，来存放每个jquery插件的完整源文件和自己写的demo，而framework文件夹则放着基本的HTML模板。</h3>
+
+        <p>Style</p>
+        <ul id="styleList">
+
+        </ul>
+
+        <p>Javascript</p>
+        <ul id="jsList">
+
+        </ul>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+    var baseUrl = "http://www.playwx.com/hd/demo/cody/lib/";
+
+    document.write("<script src ='" + baseUrl + "js/jquery-1.10.2.min.js' type='text/javascript' ><\/script> ")
+    </script>
+
+
+    <script>
+    var baseUrl = "http://cody1991.github.io/mylib/";
+
+    var jsList = ['js/chained/jquery.chained.js', 'js/chained/jquery.chained.min.js', 'js/chained/jquery.chained.remote.js', 'js/chained/jquery.chained.remote.min.js', 'js/idangerous.swiper/idangerous.swiper.js', 'js/idangerous.swiper/idangerous.swiper.min.js', 'js/iscroll5/iscroll.js', 'js/iscroll5/iscroll-infinite.js', 'js/iscroll5/iscroll-lite.js', 'js/iscroll5/iscroll-probe.js', 'js/iscroll5/iscroll-zoom.js', 'js/jquery.touchSwipe.min.js', 'js/lazyload/jquery.lazyload.js', 'js/lazyload/jquery.lazyload.min.js'];
+
+    for (var i = 0; i < jsList.length; i++) {
+        var newScript = $('<script>');
+        newScript.attr('src', baseUrl + jsList[i]);
+        newScript.attr('type', 'text/javascript');
+        $('body').append(newScript);
+
+        var newScriptLi = $('<li>');
+        newScriptLi.html(baseUrl + jsList[i]);
+        $('#jsList').append(newScriptLi);
+    }
+
+    var styleList = ['css/normalize.css', 'css/idangerous.swiper.css'];
+    for (var i = 0; i < styleList.length; i++) {
+        var newStyle = $('<link>');
+        newStyle.attr('href', baseUrl + styleList[i]);
+        newStyle.attr('rel', 'stylesheet');
+        $('head').append(newStyle);
+
+        var newStyleLi = $('<li>');
+        newStyleLi.html(baseUrl + styleList[i]);
+        $('#styleList').append(newStyleLi);
+    }
+    </script>
+
+</body>
+
+</html>
