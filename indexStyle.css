@@ -20,11 +20,19 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+.container ul {
+    position: relative;
+}
 .container ul li {
     margin-bottom: 15px;
     list-style: decimal;
 }
 .loading_icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    margin-left: -50px;
     display: block;
-    margin: 0 auto;
 }
