@@ -74,12 +74,14 @@
                 var ajax_loader_interval1 = setInterval(function() {
                     if ($('#jsList li').length > 0) {
                         $('.ajax1').fadeOut();
+                        $('#jsList').css('padding-bottom': '0');
                         clearInterval(ajax_loader_interval1);
                     }
                 }, 50);
                 var ajax_loader_interval2 = setInterval(function() {
                     if ($('#styleList li').length > 0) {
                         $('.ajax2').fadeOut();
+                        $('#styleList').css('padding-bottom': '0');
                         clearInterval(ajax_loader_interval2);
                     }
                 }, 50);

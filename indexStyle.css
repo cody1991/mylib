@@ -26,7 +26,8 @@ body {
     padding-bottom:200px;
 }
 .container ul li {
-    margin-bottom: 15px;
+    margin-top:10px;
+    margin-bottom: 10px;
     list-style: decimal;
 }
 .loading_icon {
