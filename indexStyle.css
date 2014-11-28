@@ -1,6 +1,7 @@
 body {
     background: #36c3e5;
     color: #fff;
+    overflow-x:hidden;
 }
 @font-face {
     font-family: 'Sniglet';
@@ -37,6 +38,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: decimal;
+    cursor: pointer;
 }
 .container ul li:hover {
     color: rgba(0, 0, 0, 0.8);
