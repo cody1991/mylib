@@ -37,6 +37,8 @@
 
     <script type="text/javascript">
     var baseUrl = "http://cody1991.github.io/mylib/";
+    // var baseUrl = "http://www.playwx.com/hd/demo/cody/lib/";
+
     document.write("<script src ='" + baseUrl + "js/jquery-1.10.2.min.js' type='text/javascript' ><\/script> ")
     </script>
     <script type="text/javascript">
@@ -81,18 +83,18 @@
 
                 var ajax_loader_interval1 = setInterval(function() {
                     if ($('#jsList li').length > 0) {
-                        $('.ajax1').fadeOut();
+                        $('.ajax1').hide();
                         $('#jsList').animate({
-                            'padding-bottom':'0'
+                            'padding-bottom': '0'
                         })
                         clearInterval(ajax_loader_interval1);
                     }
                 }, 50);
                 var ajax_loader_interval2 = setInterval(function() {
                     if ($('#styleList li').length > 0) {
-                        $('.ajax2').fadeOut();
+                        $('.ajax2').hide();
                         $('#styleList').animate({
-                            'padding-bottom':'0'
+                            'padding-bottom': '0'
                         })
                         clearInterval(ajax_loader_interval2);
                     }
