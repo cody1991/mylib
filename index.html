@@ -15,12 +15,12 @@
 
         <p>Style</p>
         <ul id="styleList">
-            <img src="ajax-loader.gif"  class="loading_icon">
+            <img src="ajax-loader.gif" class="loading_icon ajax1">
         </ul>
 
         <p>Javascript</p>
         <ul id="jsList">
-            <img src="ajax-loader.gif"  class="loading_icon">
+            <img src="ajax-loader.gif" class="loading_icon ajax2">
         </ul>
     </div>
 
@@ -71,12 +71,18 @@
                 //     $('body').append(newScript);
                 // }
 
-                var ajax_loader_interval = setInterval(function(){
-                    if( $('#jsList li').length > 0 && $('#styleList li').length > 0){
-                        $('.loading_icon').fadeOut();
-                        clearInterval(ajax_loader_interval);
+                var ajax_loader_interval1 = setInterval(function() {
+                    if ($('#jsList li').length > 0) {
+                        $('.ajax1').fadeOut();
+                        clearInterval(ajax_loader_interval1);
                     }
-                },50);
+                }, 50);
+                var ajax_loader_interval2 = setInterval(function() {
+                    if ($('#styleList li').length > 0) {
+                        $('.ajax2').fadeOut();
+                        clearInterval(ajax_loader_interval2);
+                    }
+                }, 50);
             }
         })
     })
