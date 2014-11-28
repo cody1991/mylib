@@ -1,3 +1,7 @@
+body {
+    background: #36c3e5;
+    color: #fff;
+}
 .container {
     font-family: 'Microsoft YaHei', sans-serif;
     font-size: 14px;
@@ -15,4 +19,5 @@
 }
 .container ul li {
     margin-bottom: 15px;
+    list-style: decimal;
 }
