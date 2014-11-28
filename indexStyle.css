@@ -38,6 +38,9 @@ body {
     margin-bottom: 10px;
     list-style: decimal;
 }
+.container ul li:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
 .loading_icon {
     position: absolute;
     width: 200px;
@@ -102,4 +105,30 @@ body {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
+}
+::-moz-selection {
+    background: #FF5E99;
+    color: #fff;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background: #FF5E99;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #FF5E99;
+    color: #fff;
+    text-shadow: none;
+}
+::-webkit-scrollbar {
+    background: transparent;
+}
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
 }
