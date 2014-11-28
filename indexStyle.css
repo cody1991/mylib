@@ -35,6 +35,7 @@ body {
     padding-bottom: 200px;
 }
 .container ul li {
+    -webkit-transition:0.5s all;
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: decimal;
