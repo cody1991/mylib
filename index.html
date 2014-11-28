@@ -37,6 +37,8 @@
 
 
     <script type="text/javascript">
+    baseUrl = "http://cody1991.github.io/mylib/";
+    // baseUrl = "http://www.playwx.com/hd/demo/cody/lib/";
     document.write("<script src ='" + baseUrl + "js/jquery-1.10.2.min.js' type='text/javascript' ><\/script> ")
     </script>
     <script type="text/javascript">
@@ -48,8 +50,6 @@
             dataType: 'json',
             success: function(data) {
                 var listData = data;
-                var baseUrl = "http://cody1991.github.io/mylib/";
-                // var baseUrl = "http://www.playwx.com/hd/demo/cody/lib/";
 
                 var jsList = listData.jsList;
                 var styleList = listData.styleList;
