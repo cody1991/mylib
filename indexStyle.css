@@ -1,7 +1,7 @@
 body {
     background: #36c3e5;
     color: #fff;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 @font-face {
     font-family: 'Sniglet';
@@ -21,8 +21,13 @@ body {
     margin: 0 auto;
 }
 .container h3 {
+    cursor: pointer;
     margin: 0;
     padding: 5px;
+    -webkit-transition: 0.2s all;
+}
+.container h3:hover,.container h3:active{
+    color: rgba(0, 0, 0, 0.8);
 }
 .container p {
     margin: 50px auto 0;
@@ -35,13 +40,13 @@ body {
     padding-bottom: 200px;
 }
 .container ul li {
-    -webkit-transition:0.5s all;
+    -webkit-transition: 0.2s all;
     margin-top: 10px;
     margin-bottom: 10px;
     list-style: decimal;
     cursor: pointer;
 }
-.container ul li:hover {
+.container ul li:hover,.container ul li:active {
     color: rgba(0, 0, 0, 0.8);
 }
 .loading_icon {
