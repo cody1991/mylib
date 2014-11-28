@@ -67,13 +67,14 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
-        var listData;
+
         $.ajax({
             type: 'GET',
             url: 'list.json',
             dataType: 'json',
             success: function(data) {
-                listData = data;
+                console.log(1);
+                var listData = data;
                 console.log(listData)
             }
         })
