@@ -2,8 +2,15 @@ body {
     background: #36c3e5;
     color: #fff;
 }
+@font-face {
+    font-family: 'Sniglet';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Sniglet Regular'), local('Sniglet-Regular'), url(SnigletRegular.woff) format('woff');
+}
 .container {
-    font-family: 'Microsoft YaHei', sans-serif;
+    font-family: 'Sniglet', 'Microsoft YaHei', sans-serif;
+    letter-spacing: 3px;
     font-size: 14px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -13,7 +20,8 @@ body {
     margin: 0 auto;
 }
 .container h3 {
-    padding: 15px;
+    margin: 0;
+    padding: 5px;
 }
 .container p {
     margin: 50px auto 0;
@@ -21,12 +29,12 @@ body {
     font-weight: bold;
 }
 .container ul {
-    margin:0;
+    margin: 0;
     position: relative;
-    padding-bottom:200px;
+    padding-bottom: 200px;
 }
 .container ul li {
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     list-style: decimal;
 }
@@ -38,4 +46,60 @@ body {
     left: 50%;
     margin-left: -100px;
     display: block;
+}
+.github {
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.github:hover, .github:active {
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+.github .github_icon {
+    display: inline-block;
+    margin: 0;
+}
+.github:hover .github_icon, .github:active .github_icon {
+    -webkit-animation: github_icon_rotate 0.5s ease both;
+}
+@-webkit-keyframes github_icon_rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.github p {
+    margin: 0;
+    font-size: 18px;
+}
+.github:hover p, .github:active p {
+    -webkit-animation: RubberBand 0.5s ease both;
+}
+@-webkit-keyframes RubberBand {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    30% {
+        -webkit-transform: scaleX(1.25) scaleY(0.75);
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    40% {
+        -webkit-transform: scaleX(0.75) scaleY(1.25);
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60% {
+        -webkit-transform: scaleX(1.15) scaleY(0.85);
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
