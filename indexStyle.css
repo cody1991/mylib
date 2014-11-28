@@ -12,6 +12,9 @@ body {
     position: relative;
     margin: 0 auto;
 }
+.container h3 {
+    padding: 15px;
+}
 .container p {
     margin: 20px auto;
     font-size: 20px;
@@ -20,4 +23,10 @@ body {
 .container ul li {
     margin-bottom: 15px;
     list-style: decimal;
+}
+.loading_icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
 }
