@@ -35,31 +35,33 @@
 
 
     <script>
-    var baseUrl = "http://cody1991.github.io/mylib/";
+    var baseUrl = "http://www.playwx.com/hd/demo/cody/lib/";
 
     var jsList = ['js/chained/jquery.chained.js', 'js/chained/jquery.chained.min.js', 'js/chained/jquery.chained.remote.js', 'js/chained/jquery.chained.remote.min.js', 'js/idangerous.swiper/idangerous.swiper.js', 'js/idangerous.swiper/idangerous.swiper.min.js', 'js/iscroll5/iscroll.js', 'js/iscroll5/iscroll-infinite.js', 'js/iscroll5/iscroll-lite.js', 'js/iscroll5/iscroll-probe.js', 'js/iscroll5/iscroll-zoom.js', 'js/jquery.touchSwipe.min.js', 'js/lazyload/jquery.lazyload.js', 'js/lazyload/jquery.lazyload.min.js'];
+    var styleList = ['css/normalize.css', 'css/idangerous.swiper.css'];
 
+
+    for (var i = 0; i < jsList.length; i++) {
+        var newScriptLi = $('<li>');
+        newScriptLi.html(baseUrl + jsList[i]);
+        $('#jsList').append(newScriptLi);
+    }
+    for (var i = 0; i < styleList.length; i++) {
+        var newStyleLi = $('<li>');
+        newStyleLi.html(baseUrl + styleList[i]);
+        $('#styleList').append(newStyleLi);
+    }
+    for (var i = 0; i < styleList.length; i++) {
+        var newStyleLi = $('<li>');
+        newStyleLi.html(baseUrl + styleList[i]);
+        $('#styleList').append(newStyleLi);
+    }
     for (var i = 0; i < jsList.length; i++) {
         var newScript = $('<script>');
         newScript.attr('src', baseUrl + jsList[i]);
         newScript.attr('type', 'text/javascript');
         $('body').append(newScript);
 
-        var newScriptLi = $('<li>');
-        newScriptLi.html(baseUrl + jsList[i]);
-        $('#jsList').append(newScriptLi);
-    }
-
-    var styleList = ['css/normalize.css', 'css/idangerous.swiper.css'];
-    for (var i = 0; i < styleList.length; i++) {
-        var newStyle = $('<link>');
-        newStyle.attr('href', baseUrl + styleList[i]);
-        newStyle.attr('rel', 'stylesheet');
-        $('head').append(newStyle);
-
-        var newStyleLi = $('<li>');
-        newStyleLi.html(baseUrl + styleList[i]);
-        $('#styleList').append(newStyleLi);
     }
     </script>
 
