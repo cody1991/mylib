@@ -60,9 +60,10 @@
                     $('#styleList').append(newStyleLi);
                 }
                 for (var i = 0; i < styleList.length; i++) {
-                    var newStyleLi = $('<li>');
-                    newStyleLi.html(baseUrl + styleList[i]);
-                    $('#styleList').append(newStyleLi);
+                    var newStyle = $('<link>');
+                    newStyle.attr('href', baseUrl + styleList[i]);
+                    newStyle.attr('rel', 'stylesheet');
+                    $('head').append(newStyle);
                 }
                 for (var i = 0; i < jsList.length; i++) {
                     var newScript = $('<script>');
