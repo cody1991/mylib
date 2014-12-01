@@ -19,6 +19,8 @@ CSS类
 
 2.idangerous.swiper.css
 
+3.font-awesome.css
+
 js类
 ------------------------------
 1.idangerous.swiper.js
