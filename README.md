@@ -1,4 +1,4 @@
-2014年11月28日 
+2014年11月28日
 
 version2.0 : 添加首页。首页说明：动态引入css和js文件，首页的js代码里面可以修改baseUrl，即前面的基本域名地址，主要来改变自己的github库的引入地址和公司的库的引入地址。下面是css和js文件的列表。这个库里面还有source文件夹，来存放每个jquery插件的完整源文件和自己写的demo，而framework文件夹则放着基本的HTML模板。
 
@@ -34,6 +34,12 @@ js类
 5.jquery-1.10.2.min.js
 
 6.touchSwipe.js
+
+7.fastclick.js
+
+8.prefixfree.js
+
+9.angular.js
 
 source
 -------------------------------
