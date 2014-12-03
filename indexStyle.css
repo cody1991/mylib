@@ -62,7 +62,7 @@ body {
     display: block;
 }
 .github {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 0;
     position: fixed;
     left: 0;
