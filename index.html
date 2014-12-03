@@ -63,12 +63,12 @@
 
                 for (var i = 0; i < jsList.length; i++) {
                     var newScriptLi = $('<li>');
-                    newScriptLi.html(baseUrl + jsList[i]);
+                    newScriptLi.html((i + 1) + " : " + baseUrl + jsList[i]);
                     $('#jsList').append(newScriptLi);
                 }
                 for (var i = 0; i < styleList.length; i++) {
                     var newStyleLi = $('<li>');
-                    newStyleLi.html(baseUrl + styleList[i]);
+                    newStyleLi.html((i + 1) + " : " + baseUrl + styleList[i]);
                     $('#styleList').append(newStyleLi);
                 }
                 // for (var i = 0; i < styleList.length; i++) {
