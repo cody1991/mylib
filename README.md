@@ -21,6 +21,8 @@ CSS类
 
 3.font-awesome.css
 
+4.owl.carousel.css
+
 js类
 ------------------------------
 1.idangerous.swiper.js
@@ -40,6 +42,8 @@ js类
 8.prefixfree.js
 
 9.angular.js
+
+10.owl.carousel.js
 
 source
 -------------------------------
