@@ -46,7 +46,7 @@ body {
     -webkit-transition: 0.2s all;
     margin-top: 10px;
     margin-bottom: 10px;
-    list-style: decimal;
+    list-style: none;
     cursor: pointer;
 }
 .container ul li:hover, .container ul li:active {
