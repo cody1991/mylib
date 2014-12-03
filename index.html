@@ -63,12 +63,15 @@
 
                 for (var i = 0; i < jsList.length; i++) {
                     var newScriptLi = $('<li>');
-                    newScriptLi.html((i + 1) + " : " + baseUrl + jsList[i]);
+
+                    var thisLink = baseUrl + jsList[i];
+                    newScriptLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + thisLink + '</a>');
                     $('#jsList').append(newScriptLi);
                 }
                 for (var i = 0; i < styleList.length; i++) {
                     var newStyleLi = $('<li>');
-                    newStyleLi.html((i + 1) + " : " + baseUrl + styleList[i]);
+                    var thisLink = baseUrl + styleList[i];
+                    newStyleLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + thisLink + '</a>');
                     $('#styleList').append(newStyleLi);
                 }
                 // for (var i = 0; i < styleList.length; i++) {

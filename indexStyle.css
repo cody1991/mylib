@@ -38,6 +38,7 @@ body {
     margin: 0;
     position: relative;
     padding-bottom: 200px;
+    padding-left: 0;
 }
 .container ul:last-of-type {
     margin-bottom: 100px;
@@ -48,8 +49,16 @@ body {
     margin-bottom: 10px;
     list-style-type: none;
     cursor: pointer;
+    white-space: nowrap;
+}
+.container ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 .container ul li:hover, .container ul li:active {
+    color: rgba(0, 0, 0, 0.8);
+}
+.container ul li:hover a, .container ul li:active a {
     color: rgba(0, 0, 0, 0.8);
 }
 .loading_icon {
