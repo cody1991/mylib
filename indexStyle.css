@@ -41,7 +41,7 @@ body {
     padding-left: 0;
 }
 .container ul:last-of-type {
-    margin-bottom: 100px;
+    margin-bottom: 300px;
 }
 .container ul li {
     -webkit-transition: 0.2s all;
