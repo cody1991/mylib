@@ -54,16 +54,18 @@ body {
     float: left;
 }
 .container ul li a {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
     display: inline-block;
-    margin: 10px;
-    border: 2px dashed #fff;
+    margin: 5px;
+    border: 2px solid #fff;
     padding: 10px;
     color: #fff;
     text-decoration: none;
 }
 .container ul li a:hover, .container ul li a:active {
     color: rgba(0, 0, 0, 0.8);
-    border: 1px dotted rgba(0, 0, 0, 0.8);
+    border: 2px dashed rgba(0, 0, 0, 0.8);
 }
 .loading_icon {
     position: absolute;
