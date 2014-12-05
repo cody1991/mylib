@@ -52,10 +52,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
-        $('.List li a').click(function(){
-            var selectUrl = $(this).attr('href');
-            $('#yourSelect').find('span').html(selectUrl);
-        })
+        
         $.ajax({
             type: 'GET',
             url: 'list.json',
