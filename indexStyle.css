@@ -51,15 +51,17 @@ body {
     list-style-type: none;
     cursor: pointer;
     white-space: nowrap;
-    float:left;
+    float: left;
 }
 .container ul li a {
-    padding:10px;
+    border: 2px dashed #fff;
+    padding: 10px;
     color: #fff;
     text-decoration: none;
 }
-.container ul li:hover, .container ul li:active {
+.container ul li a:hover, .container ul li a:active {
     color: rgba(0, 0, 0, 0.8);
+    border: 1px dotted rgba(0, 0, 0, 0.8);
 }
 .loading_icon {
     position: absolute;
