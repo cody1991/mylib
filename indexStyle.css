@@ -58,8 +58,8 @@ body {
 }
 .container ul li a {
     width: 100%;
-    word-spacing: nowrap;
-    text-overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
     -webkit-border-radius: 5px;
     border-radius: 5px;
