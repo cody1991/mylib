@@ -199,3 +199,14 @@ body {
     -webkit-border-radius: 50px;
     border-radius: 50px;
 }
+#yourSelect {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#yourSelect p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#yourSelect p:last-child {
+    font-size: 14px;
+}
