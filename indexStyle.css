@@ -55,6 +55,12 @@ body {
     width: 45%;
     text-align: center;
 }
+@media all and (max-width: 640px) {
+    .container ul li {
+        width: 100%;
+        margin-right: 0;
+    }
+}
 .container ul li:nth-child(odd) {
     margin-right: 0;
 }
@@ -74,8 +80,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
-.container ul li a:nth-child(2n) .container ul li a:hover, .container ul li a:active {
-    color: rgba(0, 0, 0, 0.8);
+.container ul li a:hover, .container ul li a:active {
     border: 2px dashed rgba(0, 0, 0, 0.8);
 }
 .loading_icon {
