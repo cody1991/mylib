@@ -200,13 +200,18 @@ body {
     border-radius: 50px;
 }
 #yourSelect {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 0;
+    z-index: 999;
+    display: none;
 }
 #yourSelect p {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-#yourSelect p:last-child {
     font-size: 14px;
 }
