@@ -82,7 +82,8 @@
                     $('#styleList').append(newStyleLi);
                 }
 
-                $('.List li a').click(function() {
+                $('.List li a').click(function(e) {
+                        e.preventDefault();
                         var selectUrl = $(this).attr('href');
                         $('#yourSelect').find('p').eq(1).html(selectUrl);
                     })
