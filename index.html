@@ -20,12 +20,12 @@
         </p>
 
         <p>Style</p>
-        <ul id="styleList List">
+        <ul id="styleList" class="List">
             <img src="ajax-loader.gif" class="loading_icon ajax1">
         </ul>
 
         <p>Javascript</p>
-        <ul id="jsList List">
+        <ul id="jsList" class="List">
             <img src="ajax-loader.gif" class="loading_icon ajax2">
         </ul>
 
@@ -52,7 +52,10 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
-
+        $('.List li a').click(function(){
+            var selectUrl = $(this).attr('href');
+            $('#yourSelect').find('span').html(selectUrl);
+        })
         $.ajax({
             type: 'GET',
             url: 'list.json',
@@ -63,6 +66,8 @@
                 var jsList = listData.jsList;
                 var styleList = listData.styleList;
 
+                console.log(jsList);
+                console.log(styleList);
 
                 for (var i = 0; i < jsList.length; i++) {
                     var newScriptLi = $('<li>');
@@ -70,7 +75,6 @@
                     var thisLink = baseUrl + jsList[i];
 
                     var temp_link = jsList[i].substr(jsList[i].lastIndexOf('/') + 1);
-                    console.log(temp_link)
                     newScriptLi.html('<a target="_blank" href="' + thisLink + '">' + temp_link + '</a>');
                     $('#jsList').append(newScriptLi);
                 }
