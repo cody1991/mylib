@@ -67,14 +67,14 @@
                     var thisLink = baseUrl + jsList[i];
 
                     var temp_link = jsList[i].substr(jsList[i].lastIndexOf('/') + 1);
-                    newScriptLi.html('<a href="' + thisLink + '">' + temp_link + '</a>');
+                    newScriptLi.html('<a target="_blank" href="' + thisLink + '">' + temp_link + '</a>');
                     $('#jsList').append(newScriptLi);
                 }
                 for (var i = 0; i < styleList.length; i++) {
                     var newStyleLi = $('<li>');
                     var thisLink = baseUrl + styleList[i];
                     var temp_link = styleList[i].substr(styleList[i].lastIndexOf('/') + 1);
-                    newStyleLi.html('<a href="' + thisLink + '">' + temp_link + '</a>');
+                    newStyleLi.html('<a target="_blank" href="' + thisLink + '">' + temp_link + '</a>');
                     $('#styleList').append(newStyleLi);
                 }
                 // for (var i = 0; i < styleList.length; i++) {
