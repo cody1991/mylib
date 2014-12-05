@@ -218,6 +218,3 @@ body {
 #yourSelect p a {
     color: #fff;
 }
-#yourSelect p a:hover, #yourSelect p a:active {
-    -webkit-animation: RubberBand 0.5s ease both;
-}
