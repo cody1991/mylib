@@ -52,23 +52,16 @@ body {
     cursor: pointer;
     white-space: nowrap;
     float: left;
-    width: 45%;
+    width: 50%;
     text-align: center;
 }
 @media all and (max-width: 640px) {
     .container ul li {
         width: 100%;
-        margin-right: 0;
     }
 }
-.container ul li:nth-child(odd) {
-    margin-right: 0;
-}
-.container ul li:nth-child(even) {
-    margin-right: 5%;
-}
 .container ul li a {
-    width: 100%;
+    width: 90%;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
