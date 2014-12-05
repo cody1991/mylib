@@ -54,6 +54,7 @@ body {
     float: left;
     width: 30%;
     margin-right: 1%;
+    text-align: center;
 }
 .container ul li a {
     width: 100%;
@@ -64,7 +65,7 @@ body {
     border-radius: 5px;
     display: inline-block;
     border: 2px solid #fff;
-    padding: 10px;
+    padding: 10px 0;
     color: #fff;
     text-decoration: none;
 }
