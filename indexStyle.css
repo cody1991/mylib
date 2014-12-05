@@ -52,9 +52,14 @@ body {
     cursor: pointer;
     white-space: nowrap;
     float: left;
-    width: 30%;
-    margin-right: 1%;
+    width: 45%;
     text-align: center;
+}
+.container ul li:nth-child(odd) {
+    margin-right: 0;
+}
+.container ul li:nth-child(even) {
+    margin-right: 5%;
 }
 .container ul li a {
     width: 100%;
