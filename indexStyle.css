@@ -54,6 +54,8 @@ body {
     float: left;
 }
 .container ul li a {
+    display: inline-block;
+    margin: 10px;
     border: 2px dashed #fff;
     padding: 10px;
     color: #fff;
