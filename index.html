@@ -15,13 +15,17 @@
     <div class="container">
         <h3>用ajax加载list.json文件来动态生成下面的css和js文件列表。首页的js代码里面可以修改baseUrl，主要来确定是自己的github库还是公司的github库的域名。这个库里面还有source文件夹，来存放每个涉及到的项目的完整源文件和自己写的Demo，而framework文件夹则放着基本的HTML模板。（点击按钮可以进入到相对于的文件的地址）</h3>
 
+        <p id="yourSelect">
+            选择了：<span></span>
+        </p>
+
         <p>Style</p>
-        <ul id="styleList">
+        <ul id="styleList List">
             <img src="ajax-loader.gif" class="loading_icon ajax1">
         </ul>
 
         <p>Javascript</p>
-        <ul id="jsList">
+        <ul id="jsList List">
             <img src="ajax-loader.gif" class="loading_icon ajax2">
         </ul>
 
@@ -48,6 +52,10 @@
     <script type="text/javascript">
     $(document).ready(function() {
 
+        $('.List li a').click(function(){
+            var selectUrl = $(this).attr('href');
+            $('#yourSelect').find('span').html(selectUrl);
+        })
         $.ajax({
             type: 'GET',
             url: 'list.json',
