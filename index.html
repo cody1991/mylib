@@ -51,11 +51,6 @@
     </script>
     <script type="text/javascript">
     $(document).ready(function() {
-
-        $('.List li a').click(function(){
-            var selectUrl = $(this).attr('href');
-            $('#yourSelect').find('span').html(selectUrl);
-        })
         $.ajax({
             type: 'GET',
             url: 'list.json',
@@ -85,18 +80,23 @@
                     newStyleLi.html('<a target="_blank" href="' + thisLink + '">' + temp_link + '</a>');
                     $('#styleList').append(newStyleLi);
                 }
-                // for (var i = 0; i < styleList.length; i++) {
-                //     var newStyle = $('<link>');
-                //     newStyle.attr('href', baseUrl + styleList[i]);
-                //     newStyle.attr('rel', 'stylesheet');
-                //     $('head').append(newStyle);
-                // }
-                // for (var i = 0; i < jsList.length; i++) {
-                //     var newScript = $('<script>');
-                //     newScript.attr('src', baseUrl + jsList[i]);
-                //     newScript.attr('type', 'text/javascript');
-                //     $('body').append(newScript);
-                // }
+
+                $('.List li a').click(function() {
+                        var selectUrl = $(this).attr('href');
+                        $('#yourSelect').find('span').html(selectUrl);
+                    })
+                    // for (var i = 0; i < styleList.length; i++) {
+                    //     var newStyle = $('<link>');
+                    //     newStyle.attr('href', baseUrl + styleList[i]);
+                    //     newStyle.attr('rel', 'stylesheet');
+                    //     $('head').append(newStyle);
+                    // }
+                    // for (var i = 0; i < jsList.length; i++) {
+                    //     var newScript = $('<script>');
+                    //     newScript.attr('src', baseUrl + jsList[i]);
+                    //     newScript.attr('type', 'text/javascript');
+                    //     $('body').append(newScript);
+                    // }
 
                 var ajax_loader_interval1 = setInterval(function() {
                     if ($('#jsList li').length > 0) {
