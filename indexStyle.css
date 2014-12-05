@@ -52,10 +52,11 @@ body {
     cursor: pointer;
     white-space: nowrap;
     float: left;
-}
-.container ul li a {
     width: 30%;
     margin-right: 1%;
+}
+.container ul li a {
+    width: 100%;
     word-spacing: nowrap;
     text-overflow: hidden;
     overflow: hidden;
