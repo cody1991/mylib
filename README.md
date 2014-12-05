@@ -23,6 +23,8 @@ CSS类
 
 4.owl.carousel.css
 
+5.responsive-nav.css
+
 js类
 ------------------------------
 1.idangerous.swiper.js
@@ -44,6 +46,8 @@ js类
 9.angular.js
 
 10.owl.carousel.js
+
+11.responsive-nav.js
 
 source
 -------------------------------
