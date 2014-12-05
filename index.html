@@ -65,13 +65,13 @@
                     var newScriptLi = $('<li>');
 
                     var thisLink = baseUrl + jsList[i];
-                    newScriptLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + thisLink + '</a>');
+                    newScriptLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + jsList[i] + '</a>');
                     $('#jsList').append(newScriptLi);
                 }
                 for (var i = 0; i < styleList.length; i++) {
                     var newStyleLi = $('<li>');
                     var thisLink = baseUrl + styleList[i];
-                    newStyleLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + thisLink + '</a>');
+                    newStyleLi.html((i + 1) + ' : ' + '<a href="' + thisLink + '">' + jsList[i] + '</a>');
                     $('#styleList').append(newStyleLi);
                 }
                 // for (var i = 0; i < styleList.length; i++) {
