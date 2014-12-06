@@ -28,6 +28,7 @@ body {
 }
 .container h3 a{
     color:#fff;
+    font-size:14px;
 }
 .container h3 a:hover, .container h3 a:active {
     color: rgba(0, 0, 0, 0.8);
