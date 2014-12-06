@@ -28,10 +28,10 @@ body {
 }
 .container h3 a{
     color:#fff;
-    -webkit-transition: 0.2s all;
 }
 .container h3 a:hover, .container h3 a:active {
     color: rgba(0, 0, 0, 0.8);
+    text-decoration:none;
 }
 .container h3:hover, .container h3:active {
     color: rgba(0, 0, 0, 0.8);
