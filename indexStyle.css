@@ -26,11 +26,8 @@ body {
     padding: 5px;
     -webkit-transition: 0.2s all;
 }
-.container h3 {
+.container h3 a{
     color:#fff;
-    cursor: pointer;
-    margin: 0;
-    padding: 5px;
     -webkit-transition: 0.2s all;
 }
 .container h3:hover, .container h3:active {
