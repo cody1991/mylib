@@ -33,9 +33,6 @@ body {
     color: rgba(0, 0, 0, 0.8);
     text-decoration:none;
 }
-.container h3:hover, .container h3:active {
-    color: rgba(0, 0, 0, 0.8);
-}
 .container p {
     margin: 50px auto 0;
     font-size: 20px;
