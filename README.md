@@ -60,6 +60,7 @@ js类
 
 15.html5shiv.js
 
+16.isotope.js
 source
 -------------------------------
 里面放着上面列举的原项目完整的代码文件(fromgit文件夹)以及自己写的一些demo(mydemo文件夹)
