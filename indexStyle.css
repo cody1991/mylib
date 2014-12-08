@@ -26,13 +26,8 @@ body {
     padding: 5px;
     -webkit-transition: 0.2s all;
 }
-.container h3 a{
-    color:#fff;
-    font-size:14px;
-}
-.container h3 a:hover, .container h3 a:active {
+.container h3:hover, .container h3:active {
     color: rgba(0, 0, 0, 0.8);
-    text-decoration:none;
 }
 .container p {
     margin: 50px auto 0;

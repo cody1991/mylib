@@ -26,6 +26,8 @@ CSS类
 
 5.responsive-nav.css
 
+6.bootstrap.css
+
 js类
 ------------------------------
 1.idangerous.swiper.js
@@ -50,15 +52,18 @@ js类
 
 11.responsive-nav.js
 
+12.bootstrap.js
+
+13.stickUp.js
+
+14.respond.js
+
+15.html5shiv.js
+
 source
 -------------------------------
 里面放着上面列举的原项目完整的代码文件(fromgit文件夹)以及自己写的一些demo(mydemo文件夹)
 
 <hr/>
-
-历史版本:
---------------------------------
-
-2014年11月28日
 
 version2.0 : 添加首页。首页说明：动态引入css和js文件，首页的js代码里面可以修改baseUrl，即前面的基本域名地址，主要来改变自己的github库的引入地址和公司的库的引入地址。下面是css和js文件的列表。这个库里面还有source文件夹，来存放每个jquery插件的完整源文件和自己写的demo，而framework文件夹则放着基本的HTML模板。
