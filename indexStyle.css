@@ -70,6 +70,11 @@ body {
         width: 33%;
     }
 }
+@media all and (min-width: 1280px) {
+    .container ul li {
+        width: 25%;
+    }
+}
 .container ul li a {
     width: 90%;
     text-overflow: ellipsis;
