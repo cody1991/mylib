@@ -16,7 +16,8 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    max-width: 640px;
+    width: 100%;
+    min-width: 320px;
     position: relative;
     margin: 0 auto;
 }
@@ -52,12 +53,21 @@ body {
     cursor: pointer;
     white-space: nowrap;
     float: left;
-    width: 50%;
     text-align: center;
 }
 @media all and (max-width: 640px) {
     .container ul li {
         width: 100%;
+    }
+}
+@media all and (max-width: 960px) {
+    .container ul li {
+        width: 50%;
+    }
+}
+@media all and (max-width: 1280px) {
+    .container ul li {
+        width: 33%;
     }
 }
 .container ul li a {
