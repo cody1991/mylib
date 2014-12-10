@@ -55,16 +55,6 @@ body {
     float: left;
     text-align: center;
 }
-@media all and (max-width: 640px) {
-    .container ul li {
-        width: 100%;
-    }
-}
-@media all and (max-width: 960px) {
-    .container ul li {
-        width: 50%;
-    }
-}
 @media all and (max-width: 1280px) {
     .container ul li {
         width: 33%;
@@ -73,6 +63,16 @@ body {
 @media all and (min-width: 1280px) {
     .container ul li {
         width: 25%;
+    }
+}
+@media all and (max-width: 960px) {
+    .container ul li {
+        width: 50%;
+    }
+}
+@media all and (max-width: 640px) {
+    .container ul li {
+        width: 100%;
     }
 }
 .container ul li a {
