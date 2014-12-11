@@ -28,6 +28,8 @@ CSS类
 
 6.bootstrap.css
 
+7.flipclock.css
+
 js类
 ------------------------------
 1.idangerous.swiper.js
@@ -61,6 +63,13 @@ js类
 15.html5shiv.js
 
 16.isotope.js
+
+17.modernizr.js
+
+18.lufylegend.js
+
+19.flipclock.js
+
 source
 -------------------------------
 里面放着上面列举的原项目完整的代码文件(fromgit文件夹)以及自己写的一些demo(mydemo文件夹)
