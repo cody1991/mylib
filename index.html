@@ -191,7 +191,7 @@
                 searchLib.keyup(function() {
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
-                        if ($(this).indexOf(nowSearchVal) > 0) {
+                        if ($(this).html().indexOf(nowSearchVal) > 0) {
                             $(this).parent().show();
                         } else {
                             $(this).parent().hide();
