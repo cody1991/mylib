@@ -233,3 +233,12 @@ body {
 #yourSelect p a {
     color: #fff;
 }
+#searchLib {
+    -webkit-appearance: none;
+    outline: none;
+    border: 2px solid #fff;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    color:#fff;
+}

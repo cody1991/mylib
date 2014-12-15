@@ -191,11 +191,10 @@
                 searchLib.keyup(function() {
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
-                        console.log(nowSearchVal);
                         if ($(this).html().indexOf(nowSearchVal) >= 0) {
                             $(this).parent().show();
                         } else {
-                            $(this).parent().hide();
+                            $(this).parent().fadeIn();
                         }
                     })
                 });
