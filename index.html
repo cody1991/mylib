@@ -78,7 +78,7 @@
         </div>
 
 
-        <!-- <input type="text" id="searchLib" value="" placeholder="输入你想要查找的工具库" /> -->
+        <input type="text" id="searchLib" value="" placeholder="输入你想要查找的工具库" />
 
         <p>Style</p>
         <ul id="styleList" class="List">
@@ -191,6 +191,8 @@
                 searchLib.keyup(function() {
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
+                        console.log(nowSearchVal);
+                        console.log($(this).html())
                         if ($(this).html().indexOf(nowSearchVal) > 0) {
                             $(this).parent().show();
                         } else {
