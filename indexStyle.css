@@ -234,6 +234,7 @@ body {
     color: #fff;
 }
 #searchLib {
+    text-align: center;
     -webkit-appearance: none;
     outline: none;
     border: 2px solid #fff;
