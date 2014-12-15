@@ -244,6 +244,7 @@ body {
     background: transparent;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    padding: 10px;
 }
 #searchLib::-webkit-input-placeholder {
     color: #fff;
