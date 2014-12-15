@@ -186,13 +186,28 @@
 
 
                 var allLink = $('.List').find('li').find('a');
-
                 var searchLib = $('#searchLib');
+
+
+                asPlacholder(searchLib[0]);
+
+                function asPlacholder(ele) {
+                    var default_val = ele.getAttribute('placeholder');
+
+                    ele.onfocus = function() {
+                        ele.setAttribute('placeholder', '');
+                    }
+                    ele.onblur = function() {
+                        if (ele.value == '') {
+                            ele.setAttribute('placeholder', default_val);
+                        }
+                    }
+                }
                 searchLib.keyup(function() {
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
                         if ($(this).html().indexOf(nowSearchVal) >= 0) {
-                            $(this).parent().fadeIn();
+                            $(this).parent().show();
                         } else {
                             $(this).parent().hide();
                         }
