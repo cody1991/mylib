@@ -192,7 +192,7 @@
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
                         console.log(nowSearchVal);
-                        console.log($(this).html())
+                        console.log($(this).html().indexOf(nowSearchVal))
                         if ($(this).html().indexOf(nowSearchVal) > 0) {
                             $(this).parent().show();
                         } else {
