@@ -192,9 +192,9 @@
                     var nowSearchVal = $(this).val();
                     allLink.each(function() {
                         if ($(this).html().indexOf(nowSearchVal) >= 0) {
-                            $(this).parent().show();
-                        } else {
                             $(this).parent().fadeIn();
+                        } else {
+                            $(this).parent().hide();
                         }
                     })
                 });

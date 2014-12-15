@@ -238,7 +238,13 @@ body {
     outline: none;
     border: 2px solid #fff;
     width: 200px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
-    color:#fff;
+    color: #fff;
+    background: transparent;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+#searchLib::-webkit-input-placeholder {
+    color: #fff;
 }
