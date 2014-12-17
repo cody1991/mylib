@@ -29,6 +29,24 @@
         </div>
     </div>
     <script src="http://www.playwx.com/hd/demo/cody/lib/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+    var user_name = document.getElementById('username');
+    var user_tel = document.getElementById('phone');
+    asPlacholder(user_name);
+    asPlacholder(user_tel);
+
+    function asPlacholder(ele) {
+        var default_val = ele.getAttribute('placeholder');
+        ele.onfocus = function() {
+            ele.setAttribute('placeholder', '');
+        }
+        ele.onblur = function() {
+            if (ele.value == '') {
+                ele.setAttribute('placeholder', default_val);
+            }
+        }
+    }
+    </script>
 </body>
 
 </html>
