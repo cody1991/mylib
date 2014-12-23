@@ -34,7 +34,9 @@
         "js/modernizr-2.6.2.min.js",
         "js/lufylegend/lufylegend-1.9.7.min.js",
         "js/flipclock/flipclock.js",
-        "js/flipclock/flipclock.min.js"
+        "js/flipclock/flipclock.min.js",
+        "js/jquery.cloud9carousel.js",
+        "js/jquery.reflection.js"
     ],
     "styleList": [
         "css/normalize.css",

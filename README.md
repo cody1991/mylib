@@ -74,6 +74,10 @@ js类
 
 19.flipclock.js
 
+20.cloud9carousel.js,
+
+21.reflection.js
+
 source
 -------------------------------
 里面放着上面列举的原项目完整的代码文件(fromgit文件夹)以及自己写的一些demo(mydemo文件夹)
