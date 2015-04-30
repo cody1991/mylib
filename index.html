@@ -70,7 +70,7 @@
 
 <body>
     <div class="container">
-        <h3>用ajax加载list.json文件来动态生成下面的css和js文件列表。首页的js代码里面可以修改baseUrl，主要来确定是自己的github库还是公司的github库的域名。这个库里面还有source文件夹，来存放每个涉及到的项目的完整源文件和自己写的Demo，而framework文件夹则放着基本的HTML模板。（点击按钮可在顶部弹出对应的文件的地址）</h3>
+        <h3>用ajax加载list.json文件来动态生成下面的css和js文件列表。这个库里面有source文件夹，来存放每个涉及到的项目的完整源文件和自己写的Demo，而framework文件夹则放着基本的HTML模板。（点击按钮可在顶部弹出对应的文件的地址）</h3>
 
         <div id="yourSelect">
             <p>选择了：</p>
@@ -105,11 +105,11 @@
     </script>
     <script type="text/javascript">
     var thisUrl = window.location.href;
-    if (thisUrl.indexOf('github') > 0) {
-        baseUrl = "http://cody1991.github.io/mylib/";
-    } else if (thisUrl.indexOf('playwx') > 0) {
-        baseUrl = "http://www.playwx.com/hd/static/codyLib/";
-    }
+    // if (thisUrl.indexOf('github') > 0) {
+        // baseUrl = "http://cody1991.github.io/mylib/";
+    // } else if (thisUrl.indexOf('playwx') > 0) {
+    baseUrl = "http://www.playwx.com/hd/static/codyLib/";
+    // }
     document.write("<script src ='" + baseUrl + "js/jquery-1.10.2.min.js' type='text/javascript' ><\/script> ")
     </script>
     <script type="text/javascript">
