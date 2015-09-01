@@ -7,7 +7,7 @@ body {
     font-family: 'Sniglet';
     font-style: normal;
     font-weight: 400;
-    src: local('Sniglet Regular'), local('Sniglet-Regular'), url(SnigletRegular.woff) format('woff');
+    src:  url(SnigletRegular.woff) format('woff');
 }
 .container {
     font-family: 'Sniglet', 'Microsoft YaHei', sans-serif;
